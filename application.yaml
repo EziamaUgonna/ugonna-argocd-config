@@ -5,19 +5,16 @@ metadata:
   namespace: argocd
 spec:
   project: default
-
   source:
     repoURL: https://github.com/EziamaUgonna/Jenkins_argocd.git
     targetRevision: HEAD
-    path: spring-boot-app-manifests
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
-
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-
     automated:
       selfHeal: true
       prune: true
