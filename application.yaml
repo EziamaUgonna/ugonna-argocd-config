@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/EziamaUgonna/Jenkins_argocd.git
+    repoURL: https://github.com/EziamaUgonna/ugonna-argocd-config.git
     targetRevision: HEAD
     path: dev
   destination: 
