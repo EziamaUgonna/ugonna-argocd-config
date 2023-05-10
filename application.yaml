@@ -18,3 +18,19 @@ spec:
     automated:
       selfHeal: true
       prune: true
+  dependencies:
+  - name: rbac
+    source:
+      path: dev/rbac.yaml
+      repoURL: https://github.com/EziamaUgonna/ugonna-argocd-config.git
+      targetRevision: HEAD
+  - name: network-policy
+    source:
+      path: dev/network-policy.yaml
+      repoURL: https://github.com/EziamaUgonna/ugonna-argocd-config.git
+      targetRevision: HEAD
+  - name: service-account
+    source:
+      path: dev/service-account.yaml
+      repoURL: https://github.com/EziamaUgonna/ugonna-argocd-config.git
+      targetRevision: HEAD
